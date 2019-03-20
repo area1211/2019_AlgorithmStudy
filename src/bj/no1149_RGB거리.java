@@ -28,16 +28,16 @@ public class no1149_RGB거리 {
 //            String[] str = br.readLine().split(" ");
             StringTokenizer st = new StringTokenizer(br.readLine());
 
-            minCost[i][0] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][1], minCost[i - 1][2]);
-            minCost[i][1] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][0], minCost[i - 1][2]);
-            minCost[i][2] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][0], minCost[i - 1][1]);
+//            minCost[i][0] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][1], minCost[i - 1][2]);
+//            minCost[i][1] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][0], minCost[i - 1][2]);
+//            minCost[i][2] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][0], minCost[i - 1][1]);
 
 //            minCost[i][0] = Integer.parseInt(str[0]) + Math.min(minCost[i - 1][1], minCost[i - 1][2]);
 //            minCost[i][1] = Integer.parseInt(str[1]) + Math.min(minCost[i - 1][0], minCost[i - 1][2]);
 //            minCost[i][2] = Integer.parseInt(str[2]) + Math.min(minCost[i - 1][0], minCost[i - 1][1]);
-//            for (int j = 0; j < 3; j++) {
-//                minCost[i][j] = Integer.parseInt(str[j]) + Math.min(minCost[i - 1][(j + 1) % 3], minCost[i - 1][(j + 2) % 3]);
-//            }
+            for (int j = 0; j < 3; j++) {
+                minCost[i][j] = Integer.parseInt(st.nextToken()) + Math.min(minCost[i - 1][(j + 1) % 3], minCost[i - 1][(j + 2) % 3]);
+            }
         }
 
 //        minCost[0][0] = cost[0][0];
