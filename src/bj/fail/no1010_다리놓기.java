@@ -1,4 +1,4 @@
-package bj;
+package bj.fail;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
+// TODO: 2019-03-26  
 public class no1010_다리놓기 {
 
     static int N, M, cnt;

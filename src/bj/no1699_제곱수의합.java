@@ -3,6 +3,7 @@ package bj;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+// TODO: 2019-03-26  
 public class no1699_제곱수의합 {
 
     public static void main(String[] args) throws Exception {
