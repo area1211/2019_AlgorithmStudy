@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public class no2573_빙산 {
     static int[] dr = {1, 0, -1, 0};
     static int[] dc = {0, 1, 0, -1};
-    static int[][] map = new int[301][301];
+    static int[][] map;
     static boolean[][] visited;
     static int R, C;
     static int year = 0;
@@ -18,6 +18,8 @@ public class no2573_빙산 {
         R = Integer.parseInt(st.nextToken());
         C = Integer.parseInt(st.nextToken());
 
+        map = new int[R + 1][C + 1];
+
         for (int i = 1; i <= R; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 1; j <= C; j++) {
@@ -26,10 +28,11 @@ public class no2573_빙산 {
         }
 
 
+
         while(true) {
             int cnt = 0;
 
-            visited = new boolean[301][301];
+            visited = new boolean[R + 1][C + 1];
             for (int i = 2; i < R; i++) {
                 for (int j = 2; j < C; j++) {
 
