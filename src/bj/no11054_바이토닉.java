@@ -6,6 +6,8 @@ import java.util.StringTokenizer;
 
 // TODO: 2019-04-09
 // 가장 긴 바이토닉 부분 수열
+// [DP]no11054 가장 긴 바이토닉 부분 수열 성공: 내가 푼 방식은 증가하는 증가하는 부분 수열과 감소하는 부분수열을 같이 구하는 방식이다.
+// 그런데 양 쪽에서 LIS를 구하는 방식으로도 풀 수 있다.
 public class no11054_바이토닉 {
 
     static int[] arr = new int[1000];
