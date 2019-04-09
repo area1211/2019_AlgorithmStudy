@@ -1,4 +1,4 @@
-package bj;
+package bj.rethink;
 
 import java.util.*;
 
@@ -19,7 +19,7 @@ public class no2667_단지번호붙이기 {
                 map[i][j] = Integer.parseInt(arr[j]);
             }
         }
-
+        
         LinkedList<Integer> list = new LinkedList<>();
 
         for (int i = 0; i < N; i++) {
