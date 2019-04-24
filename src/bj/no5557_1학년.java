@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 public class no5557_1학년 {
 
     static int[] num = new int[101];
-    static long[][] dp = new long[101][900];
+    static long[][] dp = new long[101][21];
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
