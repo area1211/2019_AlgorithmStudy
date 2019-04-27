@@ -28,9 +28,9 @@ public class no2302_극장좌석 {
         part[M] = N + 1 - head;
         MAX = Math.max(MAX, part[M]);
 
+        dp[0] = 1;
         dp[1] = 1;
-        dp[2] = 2;
-        for (int i = 3; i <= MAX; i++) {
+        for (int i = 2; i <= MAX; i++) {
             dp[i] = dp[i - 1] + dp[i - 2];
         }
 
