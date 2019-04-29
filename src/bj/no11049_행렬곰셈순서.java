@@ -43,7 +43,7 @@ public class no11049_행렬곰셈순서 {
 
         if (tx == ty) {
             dp[tx][ty] = 0;
-            return dp[tx][ty]; // 자기 자신부터 자기 자신까지는 합치는 비용이 없으므로 0을 return.
+            return dp[tx][ty]; // 자기 자신부터 자기 자신까지는 곱하는 비용이 없으므로 0을 return.
         }
         if (tx + 1 == ty) {
             dp[tx][ty] = mat[tx][0] * mat[tx][1] * mat[ty][1]; // 바로 옆에 붙어 있으면 N * M * K
@@ -53,14 +53,10 @@ public class no11049_행렬곰셈순서 {
         for (int mid = tx; mid < ty; mid++) {
 
             int left = dp(tx, mid);
-            if (left == 0)
-                left = mat[tx][0] * mat[tx][1] * mat[ty][1];
-
             int right = dp(mid + 1, ty);
-            if (right == 0)
-                right = mat[tx][0] * mat[ty][0] * mat[ty][1];
+            int last = mat[tx][0] * mat[mid][1] * mat[ty][1];
 
-            dp[tx][ty] = Math.min(dp[tx][ty], left + right);
+            dp[tx][ty] = Math.min(dp[tx][ty], left + right + last);
         }
 
         return dp[tx][ty];
