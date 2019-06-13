@@ -9,6 +9,7 @@ import java.util.*;
  *      두 개의 heap 을 사용한다.
  *      하나는 max heap, 하나는 mean heap 으로 만든다.
  *      힙을 구성하는 데 까지는 시간이 좀 걸리지만, 값을 계속 추가해나가면서 중간값을 찾을 때는 훨씬 효율적이다.
+ * 참고: https://stackoverflow.com/questions/11955728/how-to-calculate-the-median-of-an-array
  */
 public class GetMedian {
 
