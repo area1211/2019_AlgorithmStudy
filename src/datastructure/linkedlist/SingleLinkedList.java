@@ -9,13 +9,21 @@ public class SingleLinkedList<T> {
     public static void main(String[] args) {
         SingleLinkedList<Integer> singleLinkedList = new SingleLinkedList<>();
         singleLinkedList.addLast(10);
+        singleLinkedList.addLast(50);
         singleLinkedList.addLast(20);
         singleLinkedList.addLast(30);
         singleLinkedList.addLast(40);
         singleLinkedList.addLast(50);
+        singleLinkedList.addLast(50);
+        singleLinkedList.addLast(50);
+        singleLinkedList.addLast(50);
 
 
         singleLinkedList.printMiddle();
+
+        System.out.println(singleLinkedList.toString());
+        singleLinkedList.removeDuplicates();
+        System.out.println(singleLinkedList.toString());
     }
 
     // 외부에서 Node 클래스에 대해 접근할 수 없도록 private 으로 선언한다.
@@ -124,19 +132,33 @@ public class SingleLinkedList<T> {
         return returnData;
     }
 
-    void printMiddle()
-    {
+    void printMiddle() {
         Node slow_ptr = head;
         Node fast_ptr = head;
-        if (head != null)
-        {
-            while (fast_ptr != null && fast_ptr.next != null)
-            {
+        if (head != null) {
+            while (fast_ptr != null && fast_ptr.next != null) {
                 fast_ptr = fast_ptr.next.next;
                 slow_ptr = slow_ptr.next;
             }
             System.out.println("The middle element is [" +
                     slow_ptr.data + "] \n");
+        }
+    }
+
+    void removeDuplicates() {
+        /* 헤드에 대한 다른 참조*/
+        Node curr = head;
+
+        /* 마지막 노드까지 순회한다. */
+        while (curr != null) {
+            Node temp = curr;
+            /* 현재 노드를 다음 노드와 비교하고 현재 노드 데이터와 일치할 때까지 계속 삭제 */
+            while (temp != null && temp.data == curr.data) {
+                temp = temp.next;
+            }
+            /* temp 를 current node 의 다음 노드로 설정한다.*/
+            curr.next = temp;
+            curr = curr.next;
         }
     }
 
