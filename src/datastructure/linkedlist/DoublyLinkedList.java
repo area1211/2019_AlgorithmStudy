@@ -1,5 +1,7 @@
 package datastructure.linkedlist;
 
+import java.util.Arrays;
+
 public class DoublyLinkedList<T> {
 
     private Node<T> head;
@@ -135,6 +137,16 @@ public class DoublyLinkedList<T> {
 
         size--;
         return dataToReturn;
+    }
+
+    public static int kthSmallest(Integer [] arr,
+                                  int k)
+    {
+        // 파리머터로 주어진 배열을 정렬한다.
+        Arrays.sort(arr);
+
+        // 정렬된 배열에서 K번째 원소를 반환한다.
+        return arr[k-1];
     }
 
     // toString
