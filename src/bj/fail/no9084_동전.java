@@ -1,4 +1,4 @@
-package bj;
+package bj.fail;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
+// TODO: 2019-05-08  
 public class no9084_동전 {
 
     static int T, N, M;

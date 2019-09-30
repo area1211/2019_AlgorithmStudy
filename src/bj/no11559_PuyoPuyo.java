@@ -75,7 +75,7 @@ public class no11559_PuyoPuyo {
                     mapList[i].add('.');
                 }
 
-//                LinkedList<Character> tempList = new LinkedList<>();
+//                SingleLinkedList<Character> tempList = new SingleLinkedList<>();
 //                for (int j = 0; j < 12; j++) {
 //                    if (mapList[i].get(j) != '.') {
 //                        tempList.addLast(mapList[i].get(j));

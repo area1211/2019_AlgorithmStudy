@@ -75,6 +75,31 @@ public class MaxHeap {
         return popped;
     }
 
+    public int deleteMax() {
+        int item = heap[1];
+        int temp = heap[size--];
+
+        int parent = 1;
+        int child = 2;
+
+        while (child <= size) {
+            if (child < size && heap[child] < heap[child + 1]) {
+                child++;
+            }
+
+            if(temp >= heap[child]) {
+                break;
+            }
+
+            heap[parent] = heap[child];
+            parent = child;
+            child *= 2;
+        }
+
+        heap[parent] = temp;
+        return item;
+    }
+
     public static void main(String[] arg) {
         System.out.println("The Max Heap is ");
         MaxHeap maxHeap = new MaxHeap(15);
@@ -91,8 +116,11 @@ public class MaxHeap {
         maxHeap.print();
 
         int size = maxHeap.size;
-        System.out.println("The max val is " + maxHeap.extractMax());
+//        System.out.println("The max val is " + maxHeap.extractMax());
 
+        for (int i = 0; i < size; i++) {
+            System.out.println(maxHeap.deleteMax());
+        }
 
     }
 }

@@ -51,7 +51,6 @@ public class no2617_구슬찾기 {
                     }
 
                 }
-
             }
         }
 

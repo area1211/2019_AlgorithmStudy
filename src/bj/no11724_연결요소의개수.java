@@ -75,7 +75,7 @@ class GraphC {
 //
 //                if(!visited[n]) {
 //                    visited[n] = true;
-//                    queue.add(n);
+//                    datastructure.queue.add(n);
 //                }
 //            }
         }

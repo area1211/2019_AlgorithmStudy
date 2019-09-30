@@ -77,14 +77,14 @@ class GraphB {
     void BFS(int s) {
         boolean visited[] = new boolean[V + 1];
         LinkedList<Integer> queue = new LinkedList<>();
-//        PriorityQueue<Vertex> queue = new PriorityQueue<>();
-//        PriorityQueue<Integer> queue = new PriorityQueue<>();
+//        PriorityQueue<Vertex> datastructure.queue = new PriorityQueue<>();
+//        PriorityQueue<Integer> datastructure.queue = new PriorityQueue<>();
 
 //        System.out.print(s + " ");
         visited[s] = true;
-//        queue.add(new Vertex(s));
+//        datastructure.queue.add(new Vertex(s));
         queue.add(s);
-//        System.out.println(queue.toString());
+//        System.out.println(datastructure.queue.toString());
 
         Vertex vertex;
         while (queue.size() != 0) {
@@ -99,7 +99,7 @@ class GraphB {
                 if(!visited[n]) {
 
                     visited[n] = true;
-//                    queue.add(new Vertex(n));
+//                    datastructure.queue.add(new Vertex(n));
                     queue.add(n);
                 }
             }

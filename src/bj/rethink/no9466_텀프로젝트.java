@@ -43,7 +43,7 @@ public class no9466_텀프로젝트 {
                 DFS(j);
 
 //                g.init();
-//                g.DFS(j, j, new LinkedList<>());
+//                g.DFS(j, j, new SingleLinkedList<>());
 //                if (g.studentSize > 0) {
 //                    answer -= g.studentSize;
 //                }

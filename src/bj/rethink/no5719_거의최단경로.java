@@ -1,4 +1,4 @@
-package bj;
+package bj.rethink;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -7,6 +7,7 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 // TODO: 2019-05-01
+// [다익스트라/BFS/그래프]no5719 최단경로 다시 풀어보자 : 다익스트라로 dist 배열을 구한 후, 입력받은 간선 정보를 바탕으로 최단 경로를 BFS로 구할 수 있다.
 public class no5719_거의최단경로 {
     static final int MAX = 987654321;
 

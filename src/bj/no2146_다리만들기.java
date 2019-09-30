@@ -40,7 +40,7 @@ public class no2146_다리만들기 {
                     DFS(i, j);
                     landNum++;
 //                    printMap();
-//                    System.out.println(queue.size());
+//                    System.out.println(datastructure.queue.size());
                 }
             }
         }

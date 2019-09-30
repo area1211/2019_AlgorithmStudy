@@ -72,8 +72,8 @@ public class no7569_토마토 {
         Tomato p;
 
 
-//        PriorityQueue<Tomato> queue = new PriorityQueue<>();
-//        queue.add(new Tomato(i, j, k, box[i][j][k]));
+//        PriorityQueue<Tomato> datastructure.queue = new PriorityQueue<>();
+//        datastructure.queue.add(new Tomato(i, j, k, box[i][j][k]));
 
         while(!queue.isEmpty()) {
 

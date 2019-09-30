@@ -92,7 +92,7 @@ public class no9205_맥주마시면서걸어가기 {
 //        for (Key key : mapVisited.keySet()) {
 //            int dist = getDistance(new Key(x, y), key);
 //            if (dist > 0 && dist <= 1000) {
-//                queue.add(key);
+//                datastructure.queue.add(key);
 //            }
 //        }
 

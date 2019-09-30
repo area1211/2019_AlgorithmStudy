@@ -1,4 +1,4 @@
-package bj;
+package bj.rethink;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

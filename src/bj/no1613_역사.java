@@ -69,7 +69,7 @@ public class no1613_역사 {
 
 //        for (int i = 1; i <= n; i++) {
 //            g.init();
-//            g.DFS(i, new LinkedList<>());
+//            g.DFS(i, new SingleLinkedList<>());
 //        }
 
 //        for (int i = 1; i <= n; i++) {

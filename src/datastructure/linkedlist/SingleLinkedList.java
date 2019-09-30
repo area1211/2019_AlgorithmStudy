@@ -9,7 +9,6 @@ public class SingleLinkedList<T> {
     public static void main(String[] args) {
         SingleLinkedList<Integer> singleLinkedList = new SingleLinkedList<>();
         singleLinkedList.addLast(10);
-        singleLinkedList.addLast(50);
         singleLinkedList.addLast(20);
         singleLinkedList.addLast(30);
         singleLinkedList.addLast(40);

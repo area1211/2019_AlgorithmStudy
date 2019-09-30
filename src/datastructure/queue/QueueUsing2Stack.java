@@ -1,5 +1,9 @@
 package datastructure.queue;
 
+import java.lang.ref.PhantomReference;
+import java.lang.ref.SoftReference;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 import java.util.Stack;
 
 public class QueueUsing2Stack<T> {
@@ -66,6 +70,15 @@ public class QueueUsing2Stack<T> {
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
+
+        int x = 10;
+        int y = 5;
+
+        x = x * y;
+        y = x / y;
+        x = x / y;
+        System.out.println(x + ", " + y);
+
 
     }
 }
